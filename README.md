@@ -28,9 +28,15 @@ Desenvolver uma solução que aplique conceitos de desenvolvimento de software, 
 
 ```text
 /
-├── mongodb/                 
+├── mongodb/
+│   ├── 01_database.js
+│   ├── 02_collections.js
+│   ├── 03_insert_data.js
+│   ├── 04_queries.js
+│   └── 05_relationships.js
 ├── modeling/
-│   ├── entities.md          
+│   ├── entities.md
+│   └── relationships.md
 └── README.md
 ```
 
