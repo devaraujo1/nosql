@@ -1,5 +1,7 @@
  LogiTrack — Levantamento de entidades
 
+Revisão da atividade 3: as 14 entidades foram mantidas. Este arquivo fica em `modeling/entities.md`. A justificativa de embed e referência fica em `modeling/relationships.md`. Os scripts de banco, inserção e consulta ficam em `mongodb/`.
+
 ## Como os dados serão utilizados pela aplicação?
 
 A LogiTrack acompanha:
@@ -398,7 +400,7 @@ Entrega 1 ── * Ocorrencia
 Entrega 1 ── * Rastreamento
 ```
 
-Com isso dá para, nas próximas atividades, montar as collections e buscar: pedido do cliente, entrega do pedido, motorista da entrega, ocorrências da entrega.
+Com essas ligações a aplicação busca o pedido do cliente, a entrega do pedido, o motorista da entrega e as ocorrências da entrega.
 
 
 
@@ -424,9 +426,13 @@ Não é “uma entidade = uma collection”. O critério é: **a tela lê isso j
 | Ocorrência                                       | Collection `ocorrencias`                      | Contar problemas por CD e por horário                                 |
 | Endereço, Volume, Pagamento                      | Sem collection                                | Só existem dentro de outros documentos                                |
 
-### Collections previstas (próxima atividade, sem criar scripts agora)
+### Collections
+
+As collections abaixo são as da atividade 3. Volume, Pagamento, Rota e Endereço continuam sem collection.
 
 `clientes`, `produtos`, `pedidos`, `entregas`, `motoristas`, `veiculos`, `transportadoras`, `centrosDistribuicao`, `rastreamentos`, `ocorrencias`.
+
+Os arquivos que criam o banco, inserem os documentos e consultam os dados são `mongodb/01_database.js`, `mongodb/02_collections.js`, `mongodb/03_insert_data.js`, `mongodb/04_queries.js` e `mongodb/05_relationships.js`.
 
 ## Justificativa
 
